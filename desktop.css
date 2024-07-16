@@ -1,0 +1,52 @@
+/************************+*************
+*Media Query style für Desktop
+***************************************/
+@media screen and (min-width: 800px) {
+  /*************bodyStyle**************/
+  body {
+    background-image: url(E-AutoBackbild.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    font-size: 80%;
+  }
+  /*************leftStyle**************/
+  .left-container {
+    background-color: aqua;
+    grid-row-end: span 3;
+  }
+  /*************HeaderStyle**************/
+  header {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  /*************MainStyle**************/
+  main {
+    background-color: lightgreen;
+    display: grid;
+    grid-template-columns: 55% 55%;
+    height: 100%;
+    width: 100%;
+  }
+  main .div1 {
+    grid-column-start: 1;
+    margin-left: 20px;
+    padding: 15px;
+  }
+  main .div2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  /*************FooterStyle**************/
+  footer {
+    background-color: lime;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 5px;
+  }
+}
